@@ -36,18 +36,27 @@
 
 
 
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>8.27</h1>
+- **心得和疑问**
+<ul>1.总算找到一个靠谱的项目，一个博客项目，不过有些东西我自己来改动，不需要完全一样</ul>
+<ul>2.终于搞定了用IDEA clone github的项目，保持项目结构完整</ul>
+<ul>3.该项目用了一些stringutils,jsonuitls.好像不是自己写的，是自带的，我去看看以前项目里的，那个Json我去看看fastjson的那个</ul>
+<ul>4.前端还是不愿意自己写，抄吧</ul>
+
+
+<h1>8.29</h1>
+- **springboot**
+<ul>1.一直有一个mapper无法注入的问题，后来解决了，发现application.properties里面，有一个mybatis.configuration.cache-enabled=true，这样设置会导致问题，，而且当@Mapper这个注释没有的时候，可以引入import org.apache.ibatis.annotations.*;</ul>
+<ul>2.模板渲染到底怎么搞啊（终于搞定一点基本的东西，把原来的都用thymeleaf 重写）</ul>
+<ul>3.有一个点，poji类里面，id设为Integer类型，在为空的时候，就会报nullpoint的错，这是因为Integer默认为Null，改成int 就好了</ul>
+
+
+<h1>8.30</h1>
+- **博客项目继续**
+<ul>1.很多时候，在注入的时候，@Autowired不行，需要用@Resource</ul>
+<ul>2.加了拦截器之后，老是redict到 /in 的问题，终于解决，有两个bug ,第一个，是获取不到User类的主键 ID,所以在mapper.xml的insert方法里加上配置，，，，，第二个，就是粗心了，根据ticket的userid查询User,这里逻辑错了，现已纠正</ul>
+<ul>3.现在用的是Spring拦截器进行访问权限验证，还可以用AOP，和spring security</ul>
+<ul>4.create页面在首页右上角那个加号，请求代码在header.html里</ul>
 
 <h1></h1>
 <ul></ul>
