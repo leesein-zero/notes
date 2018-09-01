@@ -58,18 +58,22 @@
 <ul>3.现在用的是Spring拦截器进行访问权限验证，还可以用AOP，和spring security</ul>
 <ul>4.create页面在首页右上角那个加号，请求代码在header.html里</ul>
 
-<h1></h1>
+
+<h1>9.1</h1>
+<ul>1.@RequestParam("title")String title ，这个注释是为了绑定html中的id到变量上</ul>
+<ul>2.一个页面需要传值的变量太多咋办，有啥方法</ul>
+<ul>3.pagehelper有时候会出现版本冲突，更换最新版一般就好了</ul>
+<ul>4.时间格式化，${#dates.format(discusser.creatAt, 'yyyy-MM-dd')}</ul>
+<ul>5.用两个方括号包起来，，，，[[${custUser.nickname}]]，，和 th:text="${custUser.nickname}" ，，，一模一样，这叫行内表达式</ul>
+<ul>6.突然想起，有的pojo类要注释@Compent，有的注入对象要注释@Resource或者@Autowired，有啥区别</ul>
 <ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+- **分页显示和文章显示成功**
+<ul>1.文章显示本来以为很难的，结果查询之后返回的list,放在model里面即可，但是我到现在还没分清thymeleaf 里面 *{} 和 ${} 的区别</ul>
+<ul>2.分页就难多了，首先是导入依赖。两种方法，导入原始依赖和导入springboot封装过的，具体讲解 https://blog.csdn.net/csdn_huzeliang/article/details/79350425</ul>
+<ul>3.分页的跳转是个难题，比如说我现在是第一页，想要到第二页怎么办，，，，我是这样解决的，，写一个隐形的input ，里面传一个pageNum的值，用来设置页数，然后用一个js函数，相应的链接就是需要跳转的页数。</ul>
+<ul>4.href标签调用js函数，但是传进去的值，不能用thymeleaf解析，不能变成后台传过来的值，我也想不懂咋办，但是好在js代码里面，申明过 th:inline+"javascript"，之后，就可以在js代码里面用 行内表达式 ，算是解决了</ul>
+<ul>5.Html的特殊字符 http://www.mamicode.com/info-detail-1251831.html</ul>
+<ul>6.spring拦截器怎么同时拦截多个不同的网址，我现在是这么解决的 addPathPatterns(new ArrayList<String>(){{add("/"); add("/index");}})，，， 里面可以设置一个List类型的参数，我不知道怎么更加优雅，只能这样写</ul>
 
 
 
