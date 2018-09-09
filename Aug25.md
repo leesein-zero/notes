@@ -116,31 +116,45 @@
 有的pojo类要注释@Compent，有的注入对象要注释@Resource或者@Autowired，有啥区别
 .时间要精确到秒，那么new date()怎么使用</ul>
 
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>9.5</h1>
+- **springboot 参数校验**
+<ul>1.要引入hibernate-validator，先要引入springboot JPA</ul>
+<ul>2.pojo类增加注解，比如 @Pattern()</ul>
+<ul>3.controller网页传参增加@Valid </ul>
+<ul>4.增加BindingResult bindingResult</ul>
+<ul>5.心得，html传到后台的参数，只要name 和 pojo 字段一样，controller就可以用这个pojo 来接收</ul>
+
+- **前端页面优化**
+<ul>1.fontawesome是为bootstrap设计的图标样式，只要class="fa fa-xxx",就可以使用，前提是导入相关css</ul>
+
+- **updateByExample**
+<ul>1.这个方法有两个参数，第一个是pojo的实例对象，第二个是example</ul>
+<ul>2.原来我一直都错了，以前我是先通过example找到要修改的那一条，然后再用这个找到的对象去updateByExample，然后会报错，，真正的应该是重新New 一个对象，对要修改的部分set 修改，另外不改动，会默认Null，，，这样才不会报错</ul>
+
+- **拦截器和controller之间传递数据**
+<ul>这里是写了一pojo 来传递存取数据，，用@Component 来申请扫描</ul>
+<ul>2.为了保证线程间数据安全，用ThreadLocal，，，，，需求临时要获取ticket 字段，本来是在pojo中增加字段，，，但是这样并不保证线程安全</ul>
+<ul>3.最后在ThreadLocal 中 hashmap，，每个线程单独维护一个hashmap，，存放ticket 和 user</ul>
+
+<h1>9.7</h1>
+- **springboot 事物配置**
+<ul>1.在service中的相关方法上加@Transactional，，，在启动类上加@EnableTransactionManagement，，，，是spring-tx.jar哦</ul>
+<ul>2.@Transactional注解一般只加在增删改上</ul>
+
+<h1>9.9</h1>
+- **redis**
+<ul>1.今天突然发现redis远程连不上了，重启下就好，，用的是kill -9 pid，，，，，，那个 systemctl restart redis 没用</ul>
+<ul>2.适合做排行榜之类，听说是redis 的 zset比较合适，里面有好几个字段，key,score,member，，第一个是键名，第二个得分，第三个变量名吧，相当于，，，，我找了很久，也没有找到直接获取score值的api......我觉得，，排名和具体的值，可以用redis 的两个不同数据结构做，一个是List，一个zset</ul>
+<ul>3.Redis zset具体 API很多，随便贴一个，，https://blog.csdn.net/u013372487/article/details/51485047</ul>
+
+- **杂项**
+<ul>1.getContextPath等等的作用，，，，，https://www.cnblogs.com/keyi/p/6232658.html</ul>
+<ul>2.String.valueOf  可以把很多其他类型的，转成String</ul>
 <ul></ul>
 
-
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-
-<ul></ul>
-<ul></ul>
+- **项目进程**
+<ul>1.redis排行榜和阅读量做到一半</ul>
+<ul>2.spark单机版已经完成，可以尝试跑算法</ul>
 <ul></ul>
 <ul></ul>
 <ul></ul>
