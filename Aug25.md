@@ -155,10 +155,12 @@
 - **项目进程**
 <ul>1.redis排行榜和阅读量做到一半</ul>
 <ul>2.spark单机版已经完成，可以尝试跑算法</ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+
+<h1>9.10</h1>
+- **redis**
+<ul>1.阅读量和排行榜分开存储，一个用hash，，一个用zset</ul>
+<ul>2.Integer.parseInt，，，把其他格式变成 int </ul>
+<ul>3.把api都封装在jedisService里，功能已经实现，，，，，，，，现在有一个BUG，，，拦截器是拦截了 /article/** 这样的url，然后进行统计的，，但是如果故意输错，弄成 /article/xxx  乱七八糟的字符，还是会存进redis，，我觉得这里应该有验证的功能</ul>
 <ul></ul>
 <ul></ul>
 
