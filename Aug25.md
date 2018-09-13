@@ -168,14 +168,19 @@
 
 
 
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>9.13</h1>
+<ul>1.今天的话，做好api</ul>
+<ul>2.spring security 和 spring cloud</ul>
+
+- **做api**
+<ul>1.flask 返回json数据，可以直接返回 json.dumps()，，，也可以用jsonify({xxxxxxxxxxxxx})</ul>
+<ul>2.request.get_data()和request.json()都可以获得前端json</ul>
+<ul>3.部署，，第一个问题是开启虚拟环境，source /flask_demo/env/bin/activate，，，，这样就是开启了，，，然后uwsgi ii.ini开启uwsgi服务，具体可以更改配置文件，，，，，，最后就是nginx的配置，可以find . nginx.conf，，，还有sites-available里的default文件，可以配置，，，，，这样就可以了</ul>
+
+- **杂项**
+<ul>1.vim 直接跳转到最后一行 shift + G</ul>
+<ul>2.postman初探
+账号是我qq和密码</ul>
 <ul></ul>
 <ul></ul>
 <ul></ul>
