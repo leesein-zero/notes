@@ -181,33 +181,42 @@
 <ul>1.vim 直接跳转到最后一行 shift + G</ul>
 <ul>2.postman初探
 账号是我qq和密码</ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
 
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>9.14</h1>
+<ul>1.flask token验证</ul>
+<ul>2.JWT token验证</ul>
 <ul></ul>
 <ul></ul>
 
 
+<h1>9.18</h1>
+- **restful特点**
+<ul>1.用url表示资源，而不是表现用途，比如/user/delete 这种就不行</ul>
+<ul>2.不只是使用get,post，，，而是把四种method都使用，比如delete,put</ul>
+<ul>3.传统的返回的状态码只有404,200，但是restful活用更多状态码</ul>
+<ul>4.传输数据，使用JSon</ul>
+<ul>5.具体讲解http://www.cnblogs.com/wang-yaz/p/9237981.html</ul>
+- **security**
+<ul>1.那个logging的模块</ul>
+<ul>2.测试模块</ul>
+<ul>3.使用userdetails好像可以返回数据对象，，里面可以设置权限啥的</ul>
+
+<h1>9.19</h1>
+- **security**
+<ul>1.逻辑，在config里面的http参数方法中，设置权限和验证方式，比如formlogin，，，在auth参数方法中，引入UserDetailsService和PasswordEncoder接口的概念和使用，UserDetailsService是接口，要先实现，这里主要是进行数据库操作和返回userdetails类型的对象，，顺便赋予权限，，，然后经过PasswordEncoder进行加解密，，，具体数据操作用UserDetails 接口实现</ul>
+<ul>2.新版本的security需要passwordEncoder</ul>
+
+- **背单词**
 
 
+<h1>9.20</h1>
+<ul>1.在自定义loginPage的时候，发现输入信息之后不能跳转验证，原来是form表单中没有 method="post"</ul>
 
-
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+- **security**
+<ul>1.实现目标，使用restful传递json的思想，后缀不是html的请求，就401返回，是html，就重定向到自定义验证页面。</ul>
+<ul>2.实现可重用功能，通过设置properties，来重用，封装类来读取properties</ul>
+<ul>3.各种api查看代码</ul>
+<ul>4.controller中，返回html的话，就用string，，，返回json就用@ResponseBody</ul>
 <ul></ul>
 <ul></ul>
 <ul></ul>
