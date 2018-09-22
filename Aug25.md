@@ -137,7 +137,7 @@
 <ul>3.最后在ThreadLocal 中 hashmap，，每个线程单独维护一个hashmap，，存放ticket 和 user</ul>
 
 <h1>9.7</h1>
-- **springboot 事物配置**
+- **springboot 事务配置**
 <ul>1.在service中的相关方法上加@Transactional，，，在启动类上加@EnableTransactionManagement，，，，是spring-tx.jar哦</ul>
 <ul>2.@Transactional注解一般只加在增删改上</ul>
 
@@ -217,22 +217,35 @@
 <ul>2.实现可重用功能，通过设置properties，来重用，封装类来读取properties</ul>
 <ul>3.各种api查看代码</ul>
 <ul>4.controller中，返回html的话，就用string，，，返回json就用@ResponseBody</ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
 
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>9.22</h1>
+<ul>1.spring-security差不多搞定</ul>
+<ul>2.下载了几套UI模板，而且收藏了网址</ul>
 
+- **近期目标**
+<ul>1.spring-security大概已经弄清楚一些了，可以尝试做一个基于security的模块，跟着B站视频就行</ul>
+<ul>2.基本的简单的后台开发已经差不多了，权限验证和安全啥的，看完上面那个也差不多了，还差评论功能，点赞。</ul>
+<ul>3.再有就是，有个全文搜索的功能，搭集群之类的</ul>
+<ul>4.JVM调优，，bootstrap,分布式学习</ul>
+<ul>5.阶段再后面一些，开始java基础</ul>
 
+- **博客评论功能开发和纠错**
+<ul>1.updateByExample更新的使用自身好像也是可以的</ul>
+<ul>2.redis的排行榜突然出了问题，先注释掉</ul>
+<ul>3.Comment表的content字段返回时Null ,非常费解，我一路debug,发现CommentExample里面没有content有关的方法，但是有其他属性的方法，我就去数据库里面查看，发现content的属性是text而不是varchar，，改回来之后重新逆向工程，顺利解决</ul>
+<ul>4.每个评论之间加了css的分割线https://blog.csdn.net/LucasLi2016/article/details/55095849</ul>
+<ul>4.在显示评论内容和username的时候，有个问题，comment和user是不同的pojo,所以需要整合到一块，我这里用了重新封装的item类</ul>
+<ul>5.评论功能大致完成，但是有缺陷，首先没有回复评论功能，然后发送评论后，系统重新跳转到当前页面，但是此时回退，不能直接回到Index,而是重新回到当前界面，所以我一开始的跳转就是有缺陷的，，，最后，Index 页面的排行榜功能有Bug，未修复</ul>
+<ul>6.？？？我是不是能用ajax来做评论提交？？这样就搞定了那个跳转</ul>
+<ul>7.排行榜注释放开了，因为我redis数据清空，bug就消失了</ul>
 
+- **思考**
+<ul>1.程序的异常处理，spring boot 有没有专门的异常处理器</ul>
+<ul>2.现在的拦截器真的蠢，可以试试spring-security重构</ul>
+<ul>3.提交数据之后刷新当前页面，用redirect太蠢了，直接用ajax完美解决</ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
 
 
 
