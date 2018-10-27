@@ -230,6 +230,104 @@
 <ul>1.观察者模式，一个对象的改变，会有其他对象紧跟着做出反应</ul>
 <ul>2.python 的 struct 模块</ul>
 <ul>3.hadoop 命令行可以通过 -conf 后跟 hhhhhhh.xml 来选择不同的 xml 来选择不同的 模式，，，，但我这边是直接重写了 core-site.xml 这种，，有点麻烦</ul>
+
+
+<h1>10.23</h1>
+<ul>1.python 的 del函数</ul>
+<ul>2.既然以后要吹杭助项目，那就要熟悉微信公众号开发</ul>
+<ul>3.整一个单机版的hadoop,平时测试用，已经弄好  </ul>
+
+<h1>10.25</h1>
+<ul>1.IOUtils 真的挺好用，而且注意下读操作是输入流，写是输出流</ul>
+<ul>2.HDFS 权限怎么搞，代码里有身份这么一说吧</ul>
+<ul>3.hadoop权威指南在看</ul>
+
+
+<h1>10.26</h1>
+- **MRUnit的那些坑**
+<ul>1.maven里面不能导入，，要记得加hadoop 的版本号</ul>
+<ul>2.问题都在里头 https://blog.csdn.net/Xiblade/article/details/80559683</ul>
+
+- **hadoop权威指南**
+<ul>1.知道一个新的点，job.setCombinerClass </ul>
+<ul>2.出现两个问题，第一个，本地IDEA可以跑在远程的mapreduce程序，达成 jar包就不可以在远程跑，一直报WARN hdfs.DFSClient: Caught exception ，，这是一个，另一个是，每次在远程跑一遍程序，hdfs里面就会生成很多 /temp 临时文件，怎么更改</ul>
+<ul>3.  https://blog.csdn.net/dai451954706/article/details/50464036  不知道有没有用，先写上</ul>
+<ul>.hadoop学习路线 https://blog.csdn.net/sinat_38648491/article/details/79032396</ul>
+<ul>4.各种实战项目 https://www.oschina.net/news/73199/full-stack-engineer-growth-ideabook</ul>
+<ul>5.一个结合hadoop 的实战项目 https://www.cnblogs.com/DarrenChan/p/6640983.html</ul>
+<ul></ul>
+
+
+
+
+<h1>10.27</h1>
+- **hadoop之坑**
+<ul>1.win下可以运行的程序，打成jar放在伪分布式跑，就会卡在一个地方，我按照方法，增加了虚拟机的内存，处理器，磁盘，都没用，还更改了yarn-site.xml，还是没用，重启了两次，也没用</ul>
+<ul>2.ip:8088的 yarn 管理界面打不开，配置了</ul>
+<ul>3.把capacity-scheduler.xml 里的yarn.scheduler.capacity.maximum-am-resource-percent 调到0.9了都不行，，我下次试试集群版的</ul>
+<ul>4.那以后就在win下跑了吧，我尝试过在win下跑mapreduce，但是远程的yarn里面没有记录，说明是在本地跑的，但是最后上传到远程 hdfs了，应该是这样的</ul>
+<ul>5.经测试，不修改的集群，也跑不动</ul>
+
+- **杂项**
+<ul>1.hduhelper用户的仓库中有万能查询，学工部接口等等，可以用来吹项目</ul>
+<ul></ul>
+
+
+
+
+
+
+
+
+
+<h1></h1>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+
+
+
+
+
+
+
+<h1></h1>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+
+
+把
+
+
+
+
+<h1></h1>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+
+
+
+
+
+
+
+
+<h1></h1>
+<ul></ul>
 <ul></ul>
 <ul></ul>
 <ul></ul>
