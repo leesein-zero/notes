@@ -263,7 +263,7 @@
 <h1>10.27</h1>
 - **hadoop之坑**
 <ul>1.win下可以运行的程序，打成jar放在伪分布式跑，就会卡在一个地方，我按照方法，增加了虚拟机的内存，处理器，磁盘，都没用，还更改了yarn-site.xml，还是没用，重启了两次，也没用</ul>
-<ul>2.ip:8088的 yarn 管理界面打不开，配置了</ul>
+<ul>2.ip:8088的 yarn 管理界面打不开，配置了yarn-site.xml就好了</ul>
 <ul>3.把capacity-scheduler.xml 里的yarn.scheduler.capacity.maximum-am-resource-percent 调到0.9了都不行，，我下次试试集群版的</ul>
 <ul>4.那以后就在win下跑了吧，我尝试过在win下跑mapreduce，但是远程的yarn里面没有记录，说明是在本地跑的，但是最后上传到远程 hdfs了，应该是这样的</ul>
 <ul>5.经测试，不修改的集群，也跑不动</ul>
@@ -273,8 +273,20 @@
 <ul></ul>
 
 
-
-
+<h1>10.28</h1>
+- **hadoop**
+<ul>1.回答一下昨天的问题，在win下跑mapreduce，在远程yarn管理界面没有，是因为win的真的是在win本地跑的，结果上传而已，想要真的在远程跑，而在win下调试，需要专门配置，具体查看徐培成第9天</ul>
+<ul>2.算是于心不甘吧，还在这折腾昨天的跑不起来的问题，想到了会不会需要配置调优，结果试了下，还是不行，，，资料 https://blog.csdn.net/WYpersist/article/details/80699372，，，，，主要是mapred.default.xml</ul>
+<ul>3.顺便又多了解了一下 ，nano的用法，挺好用的，，，，https://www.cnblogs.com/nufangrensheng/p/3486018.html</ul>
+<ul>4.又搞了半天，发现自己yarn.scheduler.capacity.maximum-am-resource-percent 配错了，应该是几十几十的代表百分比，但是我该成百分百也不行，疯了，应该是机器配置太差的原因，随缘吧</ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+- **杂项**
+<ul>1.Java 的 netty</ul>
+<ul>2.Ngrok</ul>
+<ul>3.明天正式开始微信开发，主要是为了可以吹杭助的真实的上线项目，这个应该不会花太久时间，等这个过去继续hadoop，然后就差不多可以实习了，就可以准备基础和复习操作系统和计网之类的，还有算法导论</ul>
+<ul></ul>
 
 
 
@@ -290,22 +302,6 @@
 <ul></ul>
 
 
-
-
-
-
-
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-
-
-把
 
 
 
