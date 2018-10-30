@@ -289,26 +289,19 @@
 <ul></ul>
 
 
-
-
-
-<h1></h1>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
-<ul></ul>
+<h1>10.29</h1>
+<ul>1.到现在才明白，原来在win下使用hadoop，是需要你自己配置 xml的，就比如，我之前配了 core-site.xml ，指定了hdfs的地址，所以真正运行，就用的是远程的hdfs ，和本地的yarn </ul>
+<ul>2.是真的，把mapred-site拿下来，就会在远程跑</ul>
+<ul>3.win下的 yarn 管理界面打不开</ul>
+<ul>4.用 natapp 就把内外网打通了，因为是免费用户，域名是随机分配，不利于微信开发，要么花钱每个月9块，要么直接用ngrok 的一个开源软件</ul>
+<ul>5.想起来我的博客应该要部署上去，，看了一下，spring boot项目打成jar包，拿上去 jar 运行就可以了</ul>
 <ul></ul>
 <ul></ul>
 
 
-
-
-
-
-<h1></h1>
-<ul></ul>
-<ul></ul>
+<h1>10.30</h1>
+<ul>1.内网穿透终于搞定了一个免费的，，https://github.com/Wisdom-Projects/holer，，，打扰了，要money</ul>
+<ul>2.最终版，真正的免费，，https://www.wezoz.com/</ul>
 <ul></ul>
 <ul></ul>
 <ul></ul>
