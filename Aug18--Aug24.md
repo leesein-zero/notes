@@ -14,7 +14,7 @@
 <ul></ul>
 
 - **基本类型（值类型）和包装类型（引用类型）**
-<ul>1.比如int 就是值类型，默认0，Integer就是引用类型，默认mull</ul>
+<ul>1.比如int 就是值类型，默认0，Integer就是引用类型，默认null</ul>
 <ul>2.int 等值类型可以直接运算，而Integer不行，要经过自动拆箱，转成值类型，，，i.intValue()，，，，，，，</ul>
 
 - **集合和数组**
@@ -29,7 +29,6 @@
 <ul>9.想把List 去重，直接使用HashSet的构造方法，传入list就好</ul>
 <ul>10.toString方法是object 超类提供的，可以进行重写</ul>
 <ul>11.集合类有三种，List，，，Set，，，Hash，，，，</ul>
-
 
 
 - **IDEA**
