@@ -17,3 +17,5 @@ learning log
 
 * [2018-12](https://github.com/1810824959/notes/blob/master/2018-12.md)
 
+* [2019-1](https://github.com/1810824959/notes/blob/master/2019-1.md)
+
