@@ -44,7 +44,6 @@ learning log
 * [2019-6](https://github.com/1810824959/notes/blob/master/2019-6.md)
 
 * [2019-7](https://github.com/1810824959/notes/blob/master/2019-7.md)   
-* [7月突击算法（上接7月笔记）](https://github.com/1810824959/notes/blob/master/算法.md)
 
  	### 校招，我来了         ————2019.6
 
